@@ -162,7 +162,6 @@ const locale = {
   'editor.attachment.please_upload': 'Töltse fel a fájlt',
   'editor.imageGif.tooltip': 'Gif',
   'editor.replace.caseSensitive': 'Kisbetű-nagybetű érzékenység',
-  'editor.mermaid.tooltip': 'Mermaid',
   'editor.twitter.tooltip': 'Twitter',
   'editor.tooltip.flipX': 'Vízszintes tükrözés',
   'editor.tooltip.flipY': 'Függőleges tükrözés',

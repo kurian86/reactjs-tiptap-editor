@@ -162,7 +162,6 @@ const locale = {
   'editor.attachment.please_upload': 'Por favor, envie o arquivo',
   'editor.imageGif.tooltip': 'Gif',
   'editor.replace.caseSensitive': 'Sensível a maiúsculas e minúsculas',
-  'editor.mermaid.tooltip': 'Mermaid',
   'editor.twitter.tooltip': 'Twitter',
   'editor.tooltip.flipX': 'Inverter Horizontal',
   'editor.tooltip.flipY': 'Inverter Vertical',

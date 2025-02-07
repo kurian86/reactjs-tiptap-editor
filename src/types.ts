@@ -184,13 +184,6 @@ export interface BubbleMenuProps {
      */
     hidden?: boolean
   }
-  mermaidConfig?: {
-    /**
-     * @description mermaid menu hidden
-     * @default false
-     */
-    hidden?: boolean
-  }
   twitterConfig?: {
     /**
      * @description twitter menu hidden
