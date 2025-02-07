@@ -73,6 +73,17 @@
     "version": "v0.1.9"
   },
   {
+    "hash": "8a95a169d60baad6d2e8720043812c04522ee182",
+    "date": "Mon Nov 18 12:03:21 2024 +0800",
+    "message": "feat: manually import katex styles",
+    "refs": "",
+    "author_name": "Condor Hero",
+    "author_email": "love2xinwei@gmail.com",
+    "functions": [
+      "index.md"
+    ]
+  },
+  {
     "hash": "6e5afb0b4ef6ae4aaa9038d9f98236faece81314",
     "date": "Sun Nov 17 22:42:48 2024 +0700",
     "message": "chore: release v0.1.8",
@@ -319,6 +330,19 @@
     "version": "v0.0.54"
   },
   {
+    "hash": "7a87f03900163d2bfeb58a18e05ef8e048ae17b3",
+    "date": "Wed Oct 23 13:59:53 2024 +0700",
+    "message": "feat: inline katex",
+    "refs": "origin/feat-inline-katex, feat-inline-katex",
+    "author_name": "hunghg255",
+    "author_email": "giahunghust@gmail.com",
+    "functions": [
+      "BaseKit",
+      "Katex",
+      "KatexWrapper"
+    ]
+  },
+  {
     "hash": "d6ea4c28e06957ba5ff7cae7dc6b60e49dd6d294",
     "date": "Mon Oct 21 17:04:37 2024 +0700",
     "message": "docs: update",
@@ -348,6 +372,17 @@
     "author_name": "hunghg255",
     "author_email": "giahunghust@gmail.com",
     "version": "v0.0.52"
+  },
+  {
+    "hash": "0ee6f3f406477ee50f256f087029d0deb0b22241",
+    "date": "Sun Oct 20 13:45:28 2024 +0700",
+    "message": "fix: codeblock",
+    "refs": "",
+    "author_name": "hunghg255",
+    "author_email": "giahunghust@gmail.com",
+    "functions": [
+      "CodeBlockActiveButton"
+    ]
   },
   {
     "hash": "016a1504861c0522123eb8484c260a642fd177ce",
@@ -419,6 +454,7 @@
       "ImageGifActionButton",
       "ImageCropper",
       "ImageUploader",
+      "KatexActiveButton",
       "LinkEditPopover",
       "CreateTablePopover",
       "TextAlignMenuButton",
@@ -810,6 +846,22 @@
     "version": "v0.0.31"
   },
   {
+    "hash": "0a2a646a162b667c0f7455e904f7543407068935",
+    "date": "Sun Sep 1 23:16:54 2024 +0700",
+    "message": "feat: add excalidraw",
+    "refs": "origin/feat/excalidraw, feat/excalidraw",
+    "author_name": "hunghg255",
+    "author_email": "giahunghust@gmail.com",
+    "functions": [
+      "index.md",
+      "Excalidraw",
+      "ExcalidrawActiveButton",
+      "NodeViewExcalidraw",
+      "index.module.scss",
+      "index"
+    ]
+  },
+  {
     "hash": "5d5ee6ad23463aab601421826bb82800c549c701",
     "date": "Thu Aug 29 09:38:29 2024 +0700",
     "message": "chore: release v0.0.30",
@@ -857,6 +909,7 @@
     "author_name": "hunghg255",
     "author_email": "giahunghust@gmail.com",
     "functions": [
+      "CodeBlockActiveButton",
       "EmojiList",
       "EmojiPicker",
       "FontFamilyButton",
@@ -896,6 +949,17 @@
       "TableOfContentActionButton",
       "index.module.scss",
       "index"
+    ]
+  },
+  {
+    "hash": "16dafc4e1bb3a54c0c550a8bee8470976d47cc12",
+    "date": "Tue Aug 27 11:14:35 2024 +0700",
+    "message": "fix: parse katex content",
+    "refs": "",
+    "author_name": "hunghg255",
+    "author_email": "giahunghust@gmail.com",
+    "functions": [
+      "Katex"
     ]
   },
   {
@@ -1094,6 +1158,7 @@
     "author_name": "hunghg255",
     "author_email": "giahunghust@gmail.com",
     "functions": [
+      "CodeBlockActiveButton",
       "ColorActionButton",
       "EmojiList",
       "EmojiPicker",
@@ -1104,6 +1169,8 @@
       "HistoryActionButton",
       "IframeNodeView",
       "ImageUploader",
+      "KatexActiveButton",
+      "KatexWrapper",
       "LineHeightDropdown",
       "LinkEditBlock",
       "LinkEditPopover",
@@ -1127,6 +1194,21 @@
     "author_name": "hunghg255",
     "author_email": "giahunghust@gmail.com",
     "version": "v0.0.12"
+  },
+  {
+    "hash": "ef8e08f611f9acfaddad130f48dcab2a1c071329",
+    "date": "Tue Aug 20 08:36:35 2024 +0700",
+    "message": "feat: add extention katex",
+    "refs": "origin/feat-katex, feat-katex",
+    "author_name": "hunghg255",
+    "author_email": "giahunghust@gmail.com",
+    "functions": [
+      "index.md",
+      "Katex",
+      "KatexActiveButton",
+      "KatexWrapper",
+      "index"
+    ]
   },
   {
     "hash": "f2e955a0930abf9b3f0c4207f1fa528f2864720e",
@@ -1214,6 +1296,21 @@
     "author_name": "hunghg255",
     "author_email": "giahunghust@gmail.com",
     "version": "v0.0.10"
+  },
+  {
+    "hash": "1cde81df165a0eb7275d518815d4b749b63f861f",
+    "date": "Mon Aug 19 13:50:26 2024 +0700",
+    "message": "feat: codeblock highlight use shiki",
+    "refs": "",
+    "author_name": "hunghg255",
+    "author_email": "giahunghust@gmail.com",
+    "functions": [
+      "index.md",
+      "CodeBlock",
+      "CodeBlockActiveButton",
+      "highlighter",
+      "shiki-plugin"
+    ]
   },
   {
     "hash": "d832e952fd47ef4f94d96b097794b858cd7636db",
