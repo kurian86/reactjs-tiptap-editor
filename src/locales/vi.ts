@@ -163,6 +163,7 @@ const locale = {
   'editor.attachment.please_upload': 'Vui lòng tải lên tệp',
   'editor.imageGif.tooltip': 'Gif',
   'editor.replace.caseSensitive': 'Phân biệt chữ hoa chữ thường',
+  'editor.mermaid.tooltip': 'Mermaid',
   'editor.twitter.tooltip': 'Twitter',
   'editor.tooltip.flipX': 'Lật Ngang',
   'editor.tooltip.flipY': 'Lật Dọc',

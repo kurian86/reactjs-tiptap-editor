@@ -238,6 +238,13 @@
     ]
   },
   {
+    "name": "Mermaid.ts",
+    "package": "Mermaid",
+    "alias": [
+      "Mermaid"
+    ]
+  },
+  {
     "name": "MoreMark.ts",
     "package": "MoreMark",
     "alias": [

@@ -290,6 +290,7 @@
       "ImageUpload",
       "ImageUploader",
       "index",
+      "Mermaid",
       "groups",
       "Video",
       "ActiveVideoButton",
@@ -378,6 +379,24 @@
     "author_name": "hunghg255",
     "author_email": "giahunghust@gmail.com",
     "version": "v0.0.51"
+  },
+  {
+    "hash": "48ed570ba95698e257b5045a95c74c6c495a84b7",
+    "date": "Sun Oct 20 12:58:25 2024 +0700",
+    "message": "feat: add extension mermaid",
+    "refs": "origin/feat-mermaid",
+    "author_name": "hunghg255",
+    "author_email": "giahunghust@gmail.com",
+    "functions": [
+      "index.md",
+      "Image",
+      "ImageGif",
+      "Mermaid",
+      "EditMermaidBlock",
+      "MermaidActiveButton",
+      "NodeViewMermaid",
+      "index"
+    ]
   },
   {
     "hash": "5ed1ac5fd5ae3d9c68c4587af89d3a63e0cb7f6b",

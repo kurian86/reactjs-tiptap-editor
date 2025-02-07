@@ -2,8 +2,8 @@
 description: ImageGif
 
 next:
-  text: Twitter
-  link: /extensions/Twitter/index.md
+  text: Mermaid
+  link: /extensions/Mermaid/index.md
 ---
 
 # ImageGif
