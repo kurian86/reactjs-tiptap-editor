@@ -91,13 +91,6 @@
     ]
   },
   {
-    "name": "Excalidraw.ts",
-    "package": "Excalidraw",
-    "alias": [
-      "Excalidraw"
-    ]
-  },
-  {
     "name": "ExportPdf.ts",
     "package": "ExportPdf",
     "alias": [

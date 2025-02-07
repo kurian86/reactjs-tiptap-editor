@@ -12,7 +12,6 @@ import RichTextEditor, {
   Color,
   ColumnActionButton,
   Emoji,
-  Excalidraw,
   ExportPdf,
   ExportWord,
   FontFamily,
@@ -144,7 +143,6 @@ const extensions = [
     },
   }),
   ExportWord,
-  Excalidraw,
   TextDirection,
   Mention,
   Attachment.configure({

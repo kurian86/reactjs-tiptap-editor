@@ -260,10 +260,6 @@ export function getLocaleConfig(lang: string) {
           link: '/extensions/TableOfContents/index.md',
         },
         {
-          text: 'Excalidraw',
-          link: '/extensions/Excalidraw/index.md',
-        },
-        {
           text: 'TextDirection',
           link: '/extensions/TextDirection/index.md',
         },

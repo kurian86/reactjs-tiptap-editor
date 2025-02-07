@@ -846,22 +846,6 @@
     "version": "v0.0.31"
   },
   {
-    "hash": "0a2a646a162b667c0f7455e904f7543407068935",
-    "date": "Sun Sep 1 23:16:54 2024 +0700",
-    "message": "feat: add excalidraw",
-    "refs": "origin/feat/excalidraw, feat/excalidraw",
-    "author_name": "hunghg255",
-    "author_email": "giahunghust@gmail.com",
-    "functions": [
-      "index.md",
-      "Excalidraw",
-      "ExcalidrawActiveButton",
-      "NodeViewExcalidraw",
-      "index.module.scss",
-      "index"
-    ]
-  },
-  {
     "hash": "5d5ee6ad23463aab601421826bb82800c549c701",
     "date": "Thu Aug 29 09:38:29 2024 +0700",
     "message": "chore: release v0.0.30",

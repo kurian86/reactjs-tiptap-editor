@@ -93,7 +93,6 @@ import { ExportPdf } from '@/components/icons/ExportPdf'
 import ExportWord from '@/components/icons/ExportWord'
 import { ColumnAddLeft } from '@/components/icons/ColumnAddLeft'
 import { ColumnAddRight } from '@/components/icons/ColumnAddRight'
-import { Excalidraw } from '@/components/icons/Excalidraw'
 import { Direction } from '@/components/icons/Direction'
 import { LeftToRight } from '@/components/icons/LeftToRight'
 import { RightToLeft } from '@/components/icons/RightToLeft'
@@ -187,7 +186,6 @@ export const icons = {
   ColumnAddLeft,
   ColumnAddRight,
   BookMarked,
-  Excalidraw,
   ZoomIn,
   ZoomOut,
   Settings,

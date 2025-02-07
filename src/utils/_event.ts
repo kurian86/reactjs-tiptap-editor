@@ -17,7 +17,6 @@ export const OPEN_COUNT_SETTING_MODAL = 'OPEN_COUNT_SETTING_MODAL'
 export const OPEN_LINK_SETTING_MODAL = 'OPEN_LINK_SETTING_MODAL'
 export const OPEN_FLOW_SETTING_MODAL = 'OPEN_FLOW_SETTING_MODAL'
 export const OPEN_MIND_SETTING_MODAL = 'OPEN_MIND_SETTING_MODAL'
-export const OPEN_EXCALIDRAW_SETTING_MODAL = 'OPEN_EXCALIDRAW_SETTING_MODAL'
 
 export function subject(eventName: any, handler: any) {
   const event = getEventEmitter()
@@ -47,9 +46,4 @@ export function triggerOpenFlowSettingModal(data: any) {
 export function triggerOpenMindSettingModal(data: any) {
   const event = getEventEmitter()
   event.emit(OPEN_MIND_SETTING_MODAL, data)
-}
-
-export function triggerOpenExcalidrawSettingModal(data: any) {
-  const event = getEventEmitter()
-  event.emit(OPEN_EXCALIDRAW_SETTING_MODAL, data)
 }
