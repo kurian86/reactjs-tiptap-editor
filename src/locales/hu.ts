@@ -147,7 +147,6 @@ const locale = {
   'Flags': 'Zászlók',
   'Frequently used': 'Gyakran használt',
   'editor.formula.dialog.text': 'Formula',
-  'editor.katex.tooltip': 'Matematikai formula',
   'editor.exportPdf.tooltip': 'PDF exportálása',
   'editor.exportWord.tooltip': 'Word exportálása',
   'editor.importWord.tooltip': 'Word importálása',

@@ -178,13 +178,6 @@ export interface BubbleMenuProps {
      */
     hidden?: boolean
   }
-  katexConfig?: {
-    /**
-     * @description katex menu hidden
-     * @default false
-     */
-    hidden?: boolean
-  }
   iframeConfig?: {
     /**
      * @description iframe menu hidden

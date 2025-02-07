@@ -147,7 +147,6 @@ const locale = {
   'Flags': 'Cờ',
   'Frequently used': 'Thường xuyên sử dụng',
   'editor.formula.dialog.text': 'Công thức',
-  'editor.katex.tooltip': 'Công thức toán học',
   'editor.exportPdf.tooltip': 'Xuất PDF',
   'editor.exportWord.tooltip': 'Xuất Word',
   'editor.importWord.tooltip': 'Nhập Word',

@@ -2,7 +2,6 @@ import type { Editor } from '@tiptap/core'
 
 import { BubbleMenuImage, BubbleMenuImageGif, BubbleMenuLink, BubbleMenuText, BubbleMenuVideo, ColumnsBubbleMenu, ContentMenu, TableBubbleMenu } from '@/components'
 import type { BubbleMenuProps as BubbleMenuPropsType } from '@/types'
-import BubbleMenuKatex from '@/components/menus/components/BubbleMenuKatex'
 import { BubbleMenuIframe } from '@/components/menus/components/BubbleMenuIframe'
 import { ImageGif } from '@/extensions'
 import { BubbleMenuMermaid } from '@/components/menus/components/BubbleMenuMermaid'
@@ -32,7 +31,6 @@ export function BubbleMenu({ editor, disabled, bubbleMenu }: BubbleMenuComponent
     extensionsNames.includes('image') && !bubbleMenu?.imageConfig?.hidden ? <BubbleMenuImage key="image" editor={editor} disabled={disabled} /> : null,
     extensionsNames.includes(ImageGif.name) && !bubbleMenu?.imageGifConfig?.hidden ? <BubbleMenuImageGif key="imageGif" editor={editor} disabled={disabled} /> : null,
     extensionsNames.includes('video') && !bubbleMenu?.videoConfig?.hidden ? <BubbleMenuVideo key="video" editor={editor} disabled={disabled} /> : null,
-    extensionsNames.includes('katex') && !bubbleMenu?.katexConfig?.hidden ? <BubbleMenuKatex key="katex" editor={editor} disabled={disabled} /> : null,
     extensionsNames.includes('mermaid') && !bubbleMenu?.mermaidConfig?.hidden ? <BubbleMenuMermaid key="mermaid" editor={editor} disabled={disabled} /> : null,
     extensionsNames.includes('iframe') && !bubbleMenu?.iframeConfig?.hidden ? <BubbleMenuIframe key="iframe" editor={editor} disabled={disabled} /> : null,
     extensionsNames.includes('twitter') && !bubbleMenu?.twitterConfig?.hidden ? <BubbleMenuTwitter key="twitter" editor={editor} disabled={disabled} /> : null,

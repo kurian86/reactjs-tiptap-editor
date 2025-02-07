@@ -240,10 +240,6 @@ export function getLocaleConfig(lang: string) {
           link: '/extensions/Emoji/index.md',
         },
         {
-          text: 'Katex',
-          link: '/extensions/Katex/index.md',
-        },
-        {
           text: 'ExportPdf',
           link: '/extensions/ExportPdf/index.md',
         },

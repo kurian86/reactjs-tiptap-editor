@@ -73,17 +73,6 @@
     "version": "v0.1.9"
   },
   {
-    "hash": "8a95a169d60baad6d2e8720043812c04522ee182",
-    "date": "Mon Nov 18 12:03:21 2024 +0800",
-    "message": "feat: manually import katex styles",
-    "refs": "",
-    "author_name": "Condor Hero",
-    "author_email": "love2xinwei@gmail.com",
-    "functions": [
-      "index.md"
-    ]
-  },
-  {
     "hash": "6e5afb0b4ef6ae4aaa9038d9f98236faece81314",
     "date": "Sun Nov 17 22:42:48 2024 +0700",
     "message": "chore: release v0.1.8",
@@ -330,19 +319,6 @@
     "version": "v0.0.54"
   },
   {
-    "hash": "7a87f03900163d2bfeb58a18e05ef8e048ae17b3",
-    "date": "Wed Oct 23 13:59:53 2024 +0700",
-    "message": "feat: inline katex",
-    "refs": "origin/feat-inline-katex, feat-inline-katex",
-    "author_name": "hunghg255",
-    "author_email": "giahunghust@gmail.com",
-    "functions": [
-      "BaseKit",
-      "Katex",
-      "KatexWrapper"
-    ]
-  },
-  {
     "hash": "d6ea4c28e06957ba5ff7cae7dc6b60e49dd6d294",
     "date": "Mon Oct 21 17:04:37 2024 +0700",
     "message": "docs: update",
@@ -454,7 +430,6 @@
       "ImageGifActionButton",
       "ImageCropper",
       "ImageUploader",
-      "KatexActiveButton",
       "LinkEditPopover",
       "CreateTablePopover",
       "TextAlignMenuButton",
@@ -936,17 +911,6 @@
     ]
   },
   {
-    "hash": "16dafc4e1bb3a54c0c550a8bee8470976d47cc12",
-    "date": "Tue Aug 27 11:14:35 2024 +0700",
-    "message": "fix: parse katex content",
-    "refs": "",
-    "author_name": "hunghg255",
-    "author_email": "giahunghust@gmail.com",
-    "functions": [
-      "Katex"
-    ]
-  },
-  {
     "hash": "dd3de16eda9075cb6609dcc9333842aeef561b2d",
     "date": "Mon Aug 26 21:56:13 2024 +0700",
     "message": "chore: release v0.0.25",
@@ -1153,8 +1117,6 @@
       "HistoryActionButton",
       "IframeNodeView",
       "ImageUploader",
-      "KatexActiveButton",
-      "KatexWrapper",
       "LineHeightDropdown",
       "LinkEditBlock",
       "LinkEditPopover",
@@ -1178,21 +1140,6 @@
     "author_name": "hunghg255",
     "author_email": "giahunghust@gmail.com",
     "version": "v0.0.12"
-  },
-  {
-    "hash": "ef8e08f611f9acfaddad130f48dcab2a1c071329",
-    "date": "Tue Aug 20 08:36:35 2024 +0700",
-    "message": "feat: add extention katex",
-    "refs": "origin/feat-katex, feat-katex",
-    "author_name": "hunghg255",
-    "author_email": "giahunghust@gmail.com",
-    "functions": [
-      "index.md",
-      "Katex",
-      "KatexActiveButton",
-      "KatexWrapper",
-      "index"
-    ]
   },
   {
     "hash": "f2e955a0930abf9b3f0c4207f1fa528f2864720e",

@@ -95,8 +95,6 @@ export { SearchAndReplace } from './SearchAndReplace'
 
 export { Emoji } from './Emoji'
 
-export { Katex } from './Katex'
-
 export { ExportPdf } from './ExportPdf'
 
 export { ImportWord } from './ImportWord'

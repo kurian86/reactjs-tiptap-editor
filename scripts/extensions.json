@@ -210,13 +210,6 @@
     ]
   },
   {
-    "name": "Katex.ts",
-    "package": "Katex",
-    "alias": [
-      "Katex"
-    ]
-  },
-  {
     "name": "LineHeight.ts",
     "package": "LineHeight",
     "alias": [

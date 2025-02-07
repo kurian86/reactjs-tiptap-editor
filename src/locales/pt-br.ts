@@ -147,7 +147,6 @@ const locale = {
   'Flags': 'Bandeiras',
   'Frequently used': 'Frequentemente usado',
   'editor.formula.dialog.text': 'Fórmula',
-  'editor.katex.tooltip': 'Fórmula matemática',
   'editor.exportPdf.tooltip': 'Exportar PDF',
   'editor.exportWord.tooltip': 'Exportar Word',
   'editor.importWord.tooltip': 'Importar Word',

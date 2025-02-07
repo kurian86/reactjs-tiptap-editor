@@ -27,7 +27,6 @@ import RichTextEditor, {
   ImportWord,
   Indent,
   Italic,
-  Katex,
   LineHeight,
   Link,
   Mention,
@@ -49,7 +48,6 @@ import RichTextEditor, {
 } from 'reactjs-tiptap-editor'
 
 import 'reactjs-tiptap-editor/style.css'
-import 'katex/dist/katex.min.css'
 
 function convertBase64ToBlob(base64: string) {
   const arr = base64.split(',')
@@ -85,7 +83,6 @@ const extensions = [
   Underline,
   Strike,
   MoreMark,
-  Katex,
   Emoji,
   Color.configure({ spacer: true }),
   Highlight,
