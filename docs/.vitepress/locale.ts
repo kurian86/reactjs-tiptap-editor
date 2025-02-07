@@ -108,10 +108,6 @@ export function getLocaleConfig(lang: string) {
           link: '/extensions/Code/index.md',
         },
         {
-          text: 'CodeBlock',
-          link: '/extensions/CodeBlock/index.md',
-        },
-        {
           text: 'Color',
           link: '/extensions/Color/index.md',
         },

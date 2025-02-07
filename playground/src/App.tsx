@@ -8,7 +8,6 @@ import RichTextEditor, {
   BulletList,
   Clear,
   Code,
-  CodeBlock,
   Color,
   ColumnActionButton,
   Emoji,
@@ -125,7 +124,6 @@ const extensions = [
   Code.configure({
     toolbar: false,
   }),
-  CodeBlock.configure({ defaultTheme: 'dracula' }),
   ColumnActionButton,
   Table,
   Iframe,

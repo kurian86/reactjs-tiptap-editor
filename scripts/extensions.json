@@ -49,27 +49,6 @@
     ]
   },
   {
-    "name": "CodeBlock.ts",
-    "package": "CodeBlock",
-    "alias": [
-      "CodeBlock"
-    ]
-  },
-  {
-    "name": "CodeBlock.ts",
-    "package": "CodeBlock",
-    "alias": [
-      "highlighter"
-    ]
-  },
-  {
-    "name": "CodeBlock.ts",
-    "package": "CodeBlock",
-    "alias": [
-      "shiki-plugin"
-    ]
-  },
-  {
     "name": "Color.ts",
     "package": "Color",
     "alias": [

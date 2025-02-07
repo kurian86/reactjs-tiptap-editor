@@ -169,7 +169,7 @@ export const BaseKit = Extension.create<BaseKitOptions>({
               // @ts-expect-error
               return `${localeActions.t(`editor.heading.h${node.attrs.level}.tooltip`)}`
             }
-            if (node?.type?.name === 'codeBlock' || node?.type?.name === 'table') {
+            if (node?.type?.name === 'table') {
               return ''
             }
             if (editor.extensionManager.extensions.some(ext => ext.name === 'slashCommand')) {

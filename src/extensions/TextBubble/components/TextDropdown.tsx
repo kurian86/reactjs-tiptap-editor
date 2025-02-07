@@ -80,13 +80,6 @@ function TextDropdown(props: IPropsTextDropdown) {
         iconName: 'TextQuote',
         action: () => props.editor.chain().focus().clearNodes().toggleBlockquote().run(),
       },
-      {
-        name: 'codeBlock',
-        label: t('editor.codeblock.tooltip'),
-        isActive: () => props.editor.isActive('codeBlock'),
-        iconName: 'Code2',
-        action: () => props.editor.chain().focus().clearNodes().toggleCodeBlock().run(),
-      },
     ]
   }, [props.editor, t])
 

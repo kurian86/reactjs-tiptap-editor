@@ -36,7 +36,6 @@ export type ExtensionNameKeys =
   | 'blockquote'
   | 'horizontalRule'
   | 'code'
-  | 'codeBlock'
   | 'clear'
   | 'history'
 

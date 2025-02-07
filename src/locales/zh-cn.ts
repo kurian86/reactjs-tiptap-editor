@@ -108,7 +108,6 @@ const locale = {
   'editor.blockquote.tooltip': '引用',
   'editor.horizontalrule.tooltip': '水平线',
   'editor.code.tooltip': '代码',
-  'editor.codeblock.tooltip': '代码块',
   'editor.clear.tooltip': '清除格式',
   'editor.undo.tooltip': '撤销',
   'editor.redo.tooltip': '重做',

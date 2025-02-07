@@ -86,19 +86,6 @@ export function renderGroups(extensions: Extensions) {
       })
     }
 
-    if (extension.name.toLowerCase() === 'codeblock') {
-      groups[0].commands.push({
-        name: 'codeBlock',
-        label: localeActions.t('editor.codeblock.tooltip'),
-        iconName: 'Code2',
-        description: 'Code block with syntax highlighting',
-        shouldBeHidden: editor => editor.isActive('columns'),
-        action: ({ editor, range }) => {
-          editor.chain().focus().deleteRange(range).setCodeBlock().run()
-        },
-      })
-    }
-
     /* Insert */
     if (extension.name.toLowerCase() === 'image') {
       groups[1].commands.push({
