@@ -378,7 +378,6 @@ export const namesToEmoji = {
   'vampire_woman': '🧛‍♀️',
   'merperson': '🧜',
   'merman': '🧜‍♂️',
-  'mermaid': '🧜‍♀️',
   'elf': '🧝',
   'elf_man': '🧝‍♂️',
   'elf_woman': '🧝‍♀️',

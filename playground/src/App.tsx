@@ -30,7 +30,6 @@ import RichTextEditor, {
   LineHeight,
   Link,
   Mention,
-  Mermaid,
   MoreMark,
   OrderedList,
   SearchAndReplace,
@@ -143,20 +142,6 @@ const extensions = [
   TextDirection,
   Mention,
   Attachment.configure({
-    upload: (file: any) => {
-      // fake upload return base 64
-      const reader = new FileReader()
-      reader.readAsDataURL(file)
-
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          const blob = convertBase64ToBlob(reader.result as string)
-          resolve(URL.createObjectURL(blob))
-        }, 300)
-      })
-    },
-  }),
-  Mermaid.configure({
     upload: (file: any) => {
       // fake upload return base 64
       const reader = new FileReader()

@@ -272,10 +272,6 @@ export function getLocaleConfig(lang: string) {
           link: '/extensions/ImageGif/index.md',
         },
         {
-          text: 'Mermaid',
-          link: '/extensions/Mermaid/index.md',
-        },
-        {
           text: 'Twitter',
           link: '/extensions/Twitter/index.md',
         },
