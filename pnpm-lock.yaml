@@ -194,9 +194,6 @@ importers:
       frimousse:
         specifier: ^0.1.1
         version: 0.1.1(react@19.1.0)
-      katex:
-        specifier: ^0.16.22
-        version: 0.16.22
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -246,9 +243,6 @@ importers:
       '@types/deep-equal':
         specifier: ^1.0.4
         version: 1.0.4
-      '@types/katex':
-        specifier: ^0.16.7
-        version: 0.16.7
       '@types/lodash-es':
         specifier: ^4.17.12
         version: 4.17.12
@@ -4316,10 +4310,6 @@ packages:
 
   /@types/json-schema@7.0.15:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
-    dev: true
-
-  /@types/katex@0.16.7:
-    resolution: {integrity: sha512-HMwFiRujE5PjrgwHQ25+bsLJgowjGjm5Z8FVSf0N6PwgJrwxH0QxzHYDcKsTfV3wva0vzrpqMTJS2jXPr5BMEQ==}
     dev: true
 
   /@types/linkify-it@5.0.0:

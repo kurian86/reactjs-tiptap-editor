@@ -2,8 +2,8 @@
 description: TableOfContents
 
 next:
-  text: Excalidraw
-  link: /extensions/Excalidraw/index.md
+  text: TextDirection
+  link: /extensions/TextDirection/index.md
 ---
 
 # Table Of Contents

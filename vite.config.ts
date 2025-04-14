@@ -1,16 +1,16 @@
-import * as path from 'node:path'
-import fs from 'node:fs'
+import fs from 'node:fs';
+import * as path from 'node:path';
 
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
-import dts from 'vite-plugin-dts'
-import tailwind from 'tailwindcss'
-import autoprefixer from 'autoprefixer'
-import postcssReplace from 'postcss-replace'
+import react from '@vitejs/plugin-react';
+import autoprefixer from 'autoprefixer';
+import postcssReplace from 'postcss-replace';
+import tailwind from 'tailwindcss';
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  const isDev = mode !== 'production'
+  const isDev = mode !== 'production';
 
   return {
     plugins: [
@@ -20,10 +20,10 @@ export default defineConfig(({ mode }) => {
         afterBuild: (emittedFiles) => {
           emittedFiles.forEach((content, filePath) => {
             if (filePath.endsWith('.d.ts')) {
-              const newFilePath = filePath.replace('.d.ts', '.d.cts')
-              fs.writeFileSync(newFilePath, content)
+              const newFilePath = filePath.replace('.d.ts', '.d.cts');
+              fs.writeFileSync(newFilePath, content);
             }
-          })
+          });
         },
       }),
     ],
@@ -60,7 +60,7 @@ export default defineConfig(({ mode }) => {
         entry: [
           path.resolve(__dirname, 'src/index.ts'),
           path.resolve(__dirname, 'src/extension-bundle.ts'),
-          path.resolve(__dirname, 'src/locale-bundle.ts')
+          path.resolve(__dirname, 'src/locale-bundle.ts'),
         ],
         formats: ['es', 'cjs'],
         fileName: (format, entryName) => {
@@ -72,20 +72,50 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         output: {
           assetFileNames: (assetInfo) => {
-            if (assetInfo.name == "reactjs-tiptap-editor.css") return "style.css";
+            if (assetInfo.name == 'reactjs-tiptap-editor.css') return 'style.css';
             return assetInfo.name;
           },
           manualChunks(id) {
             if (id.includes('@tiptap')) {
-              return 'tiptap'
+              return 'tiptap';
             }
             if (id.includes('node_modules')) {
-              return 'vendor'
+              return 'vendor';
             }
           },
         },
-        external: ['react', 'react-dom', 'react/jsx-runtime', 'katex', 'shiki', 'docx', '@radix-ui/react-dropdown-menu', '@radix-ui/react-icons', '@radix-ui/react-label', '@radix-ui/react-popover', '@radix-ui/react-separator', '@radix-ui/react-slot', '@radix-ui/react-switch', '@radix-ui/react-tabs', '@radix-ui/react-toast', '@radix-ui/react-toggle', '@radix-ui/react-tooltip', '@radix-ui/react-select', '@radix-ui/react-checkbox', 'react-colorful', 'scroll-into-view-if-needed', 'tippy.js', 'lucide-react', 'prosemirror-docx', 're-resizable', '@excalidraw/excalidraw', '@radix-ui/react-dialog', 'react-image-crop', 'mermaid', 'easydrawer', 'frimousse'],
+        external: [
+          'react',
+          'react-dom',
+          'react/jsx-runtime',
+          'shiki',
+          'docx',
+          '@radix-ui/react-dropdown-menu',
+          '@radix-ui/react-icons',
+          '@radix-ui/react-label',
+          '@radix-ui/react-popover',
+          '@radix-ui/react-separator',
+          '@radix-ui/react-slot',
+          '@radix-ui/react-switch',
+          '@radix-ui/react-tabs',
+          '@radix-ui/react-toast',
+          '@radix-ui/react-toggle',
+          '@radix-ui/react-tooltip',
+          '@radix-ui/react-select',
+          '@radix-ui/react-checkbox',
+          'react-colorful',
+          'scroll-into-view-if-needed',
+          'tippy.js',
+          'lucide-react',
+          'prosemirror-docx',
+          're-resizable',
+          '@radix-ui/react-dialog',
+          'react-image-crop',
+          'mermaid',
+          'easydrawer',
+          'frimousse',
+        ],
       },
     },
-  }
-})
+  };
+});

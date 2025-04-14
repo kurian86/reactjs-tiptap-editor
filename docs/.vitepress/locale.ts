@@ -241,10 +241,6 @@ export function getLocaleConfig(lang: string) {
           link: '/extensions/Emoji/index.md',
         },
         {
-          text: 'Katex',
-          link: '/extensions/Katex/index.md',
-        },
-        {
           text: 'ExportPdf',
           link: '/extensions/ExportPdf/index.md',
         },
@@ -259,10 +255,6 @@ export function getLocaleConfig(lang: string) {
         {
           text: 'TableOfContents',
           link: '/extensions/TableOfContents/index.md',
-        },
-        {
-          text: 'Excalidraw',
-          link: '/extensions/Excalidraw/index.md',
         },
         {
           text: 'TextDirection',

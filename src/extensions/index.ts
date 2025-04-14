@@ -62,9 +62,9 @@ export type { BaseKitOptions } from './BaseKit';
 
 export { SubAndSuperScript } from './Subscript';
 
-export type { SubAndSuperScriptOptions } from './Subscript';
-export type { MoreMarkOptions } from './MoreMark';
 export { MoreMark } from './MoreMark';
+export type { MoreMarkOptions } from './MoreMark';
+export type { SubAndSuperScriptOptions } from './Subscript';
 
 export { Indent } from './Indent';
 export type { IndentOptions } from './Indent';
@@ -77,8 +77,8 @@ export { SlashCommand } from './SlashCommand';
 export { Image } from './Image';
 export type { SetImageAttrsOptions } from './Image';
 
-export { Video } from './Video/Video';
 export type { VideoOptions } from './Video';
+export { Video } from './Video/Video';
 
 export { Table } from './Table';
 
@@ -87,15 +87,13 @@ export type { TableOptions } from './Table';
 export { FormatPainter } from './FormatPainter';
 export type { FormatPainterOptions } from './FormatPainter';
 
-export { Column, MultiColumn, ColumnActionButton } from './MultiColumn';
+export { Column, ColumnActionButton, MultiColumn } from './MultiColumn';
 
 export { Iframe } from './Iframe';
 
 export { SearchAndReplace } from './SearchAndReplace';
 
 export { Emoji } from './Emoji';
-
-export { Katex } from './Katex';
 
 export { ExportPdf } from './ExportPdf';
 

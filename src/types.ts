@@ -10,9 +10,9 @@ export type { Editor, JSONContent } from '@tiptap/core';
  */
 export interface EchoEditorOnChange {
   /** Editor object */
-  editor: CoreEditor
+  editor: CoreEditor;
   /** Output content, can be a string or JSON content */
-  output: string | JSONContent
+  output: string | JSONContent;
 }
 
 /**
@@ -47,13 +47,13 @@ export type ExtensionNameKeys =
  */
 export interface GeneralOptions<T> {
   /** Enabled divider */
-  divider: boolean
+  divider: boolean;
   /** Enabled spacer */
-  spacer: boolean
+  spacer: boolean;
   /** Button view function */
-  button: ButtonView<T>
+  button: ButtonView<T>;
   /** Show on Toolbar */
-  toolbar?: boolean
+  toolbar?: boolean;
 }
 
 /**
@@ -61,14 +61,14 @@ export interface GeneralOptions<T> {
  */
 export interface ButtonViewReturnComponentProps {
   /** Method triggered when action is performed */
-  action?: (value?: any) => void
+  action?: (value?: any) => void;
   /** Whether it is in the active state */
-  isActive?: () => boolean
+  isActive?: () => boolean;
   /** Button icon */
-  icon?: any
+  icon?: any;
   /** Text displayed on hover */
-  tooltip?: string
-  [x: string]: any
+  tooltip?: string;
+  [x: string]: any;
 }
 
 /**
@@ -76,8 +76,8 @@ export interface ButtonViewReturnComponentProps {
  */
 export interface ButtonViewReturnComponentSlots {
   /** Dialog slot */
-  dialog: () => any
-  [x: string]: () => any
+  dialog: () => any;
+  [x: string]: () => any;
 }
 
 /**
@@ -85,11 +85,11 @@ export interface ButtonViewReturnComponentSlots {
  */
 export interface ButtonViewReturn {
   /** Component */
-  component: unknown
+  component: unknown;
   /** Component props */
-  componentProps: ButtonViewReturnComponentProps
+  componentProps: ButtonViewReturnComponentProps;
   /** Component slots */
-  componentSlots?: ButtonViewReturnComponentSlots
+  componentSlots?: ButtonViewReturnComponentSlots;
 }
 
 /**
@@ -97,11 +97,11 @@ export interface ButtonViewReturn {
  */
 export interface ButtonViewParams<T = any> {
   /** Editor object */
-  editor: Editor
+  editor: Editor;
   /** Extension object */
-  extension: Extension<T>
+  extension: Extension<T>;
   /** Translation function */
-  t: (path: string) => string
+  t: (path: string) => string;
 }
 
 /**
@@ -113,22 +113,21 @@ export type ButtonView<T = any> = (options: ButtonViewParams<T>) => ButtonViewRe
  * Represents the BubbleMenuRenderProps.
  */
 export interface BubbleMenuRenderProps {
-  editor: Editor
-  disabled: boolean
-  bubbleMenu: BubbleMenuProps
+  editor: Editor;
+  disabled: boolean;
+  bubbleMenu: BubbleMenuProps;
 }
 
 export interface BubbleMenuConfig {
   /**
-     * @description Column menu hidden
-     * @default false
-     */
-  hidden?: boolean
+   * @description Column menu hidden
+   * @default false
+   */
+  hidden?: boolean;
   /**
    * custom menu actions
    */
-  actions?: ActionButtonProps[]
-  
+  actions?: ActionButtonProps[];
 }
 
 /**
@@ -140,87 +139,80 @@ export interface BubbleMenuProps {
      * @description Column menu hidden
      * @default false
      */
-    hidden?: boolean
-  }
-  tableConfig?: BubbleMenuConfig
+    hidden?: boolean;
+  };
+  tableConfig?: BubbleMenuConfig;
   floatingMenuConfig?: {
     /**
      * @description Floating menu hidden
      * @default false
      */
-    hidden?: boolean
-  }
+    hidden?: boolean;
+  };
   linkConfig?: {
     /**
      * @description Link menu hidden
      * @default false
      */
-    hidden?: boolean
-  }
+    hidden?: boolean;
+  };
   textConfig?: {
     /**
      * @description Text menu hidden
      * @default false
      */
-    hidden?: boolean
-  }
+    hidden?: boolean;
+  };
   imageConfig?: {
     /**
      * @description Image menu hidden
      * @default false
      */
-    hidden?: boolean
-  }
+    hidden?: boolean;
+  };
   imageGifConfig?: {
     /**
      * @description Image menu hidden
      * @default false
      */
-    hidden?: boolean
-  }
+    hidden?: boolean;
+  };
   videoConfig?: {
     /**
      * @description Video menu hidden
      * @default false
      */
-    hidden?: boolean
-  }
-  katexConfig?: {
-    /**
-     * @description katex menu hidden
-     * @default false
-     */
-    hidden?: boolean
-  }
+    hidden?: boolean;
+  };
   iframeConfig?: {
     /**
      * @description iframe menu hidden
      * @default false
      */
-    hidden?: boolean
-  }
+    hidden?: boolean;
+  };
   mermaidConfig?: {
     /**
      * @description mermaid menu hidden
      * @default false
      */
-    hidden?: boolean
-  }
+    hidden?: boolean;
+  };
   twitterConfig?: {
     /**
      * @description twitter menu hidden
      * @default false
      */
-    hidden?: boolean
-  }
+    hidden?: boolean;
+  };
   drawerConfig?: {
     /**
      * @description twitter menu hidden
      * @default false
      */
-    hidden?: boolean
-  }
-  render?: (props: BubbleMenuRenderProps, dom: React.ReactNode) => React.ReactNode
+    hidden?: boolean;
+  };
+  render?: (props: BubbleMenuRenderProps, dom: React.ReactNode) => React.ReactNode;
 }
 
 /**
@@ -228,24 +220,29 @@ export interface BubbleMenuProps {
  */
 export interface ToolbarItemProps {
   button: {
-    component: React.ComponentType<any>
-    componentProps: Record<string, any>
-  }
-  divider: boolean
-  spacer: boolean
-  type: string
-  name: string
+    component: React.ComponentType<any>;
+    componentProps: Record<string, any>;
+  };
+  divider: boolean;
+  spacer: boolean;
+  type: string;
+  name: string;
 }
 
 export interface ToolbarRenderProps {
-  editor: Editor
-  disabled: boolean
+  editor: Editor;
+  disabled: boolean;
 }
 export interface ToolbarProps {
-  render?: (props: ToolbarRenderProps, toolbarItems: ToolbarItemProps[], dom: any[], containerDom: (innerContent: React.ReactNode) => React.ReactNode) => React.ReactNode
+  render?: (
+    props: ToolbarRenderProps,
+    toolbarItems: ToolbarItemProps[],
+    dom: any[],
+    containerDom: (innerContent: React.ReactNode) => React.ReactNode
+  ) => React.ReactNode;
 }
 
 export interface NameValueOption<T = string> {
-  name: string
-  value: T
+  name: string;
+  value: T;
 }

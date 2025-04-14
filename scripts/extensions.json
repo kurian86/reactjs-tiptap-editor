@@ -217,13 +217,6 @@
     ]
   },
   {
-    "name": "Katex.ts",
-    "package": "Katex",
-    "alias": [
-      "Katex"
-    ]
-  },
-  {
     "name": "ListItem.ts",
     "package": "ListItem",
     "alias": [
