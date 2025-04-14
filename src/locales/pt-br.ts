@@ -13,7 +13,7 @@ const locale = {
   'editor.table_of_content': 'Tabela de conteúdos',
   'editor.draghandle.tooltip': 'Modificar',
   'editor.copyToClipboard': 'Copiar para a área de transferência',
-  'editor.slash': "Pressione '/' para comandos",
+  'editor.slash': 'Pressione \'/\' para comandos',
   'editor.slash.empty': 'Nenhum resultado',
   'editor.slash.format': 'Formato',
   'editor.slash.insert': 'Inserir',

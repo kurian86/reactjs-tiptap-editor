@@ -13,7 +13,7 @@ const locale = {
   'editor.table_of_content': 'Tartalomjegyzék',
   'editor.draghandle.tooltip': 'Módosítás',
   'editor.copyToClipboard': 'Másolás vágólapra',
-  'editor.slash': "Nyomja meg a '/' gombot a parancsokhoz",
+  'editor.slash': 'Nyomja meg a \'/\' gombot a parancsokhoz',
   'editor.slash.empty': 'Nincs találat',
   'editor.slash.format': 'Formátum',
   'editor.slash.insert': 'Beszúrás',

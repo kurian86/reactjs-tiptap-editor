@@ -13,7 +13,7 @@ const locale = {
   'editor.table_of_content': '目录',
   'editor.draghandle.tooltip': '修改',
   'editor.copyToClipboard': '复制到剪贴板',
-  'editor.slash': "按 '/' 使用命令",
+  'editor.slash': '按 \'/\' 使用命令',
   'editor.slash.empty': '无结果',
   'editor.slash.format': '格式',
   'editor.slash.insert': '插入',
