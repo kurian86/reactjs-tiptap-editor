@@ -108,7 +108,6 @@ const locale = {
   'editor.blockquote.tooltip': 'Blokkidézet',
   'editor.horizontalrule.tooltip': 'Vízszintes vonal',
   'editor.code.tooltip': 'Kód',
-  'editor.codeblock.tooltip': 'Kód Blokk',
   'editor.clear.tooltip': 'Formatálás Törlése',
   'editor.undo.tooltip': 'Visszavonás',
   'editor.redo.tooltip': 'Visszaállítás',

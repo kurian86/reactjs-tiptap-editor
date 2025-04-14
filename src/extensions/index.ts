@@ -13,9 +13,6 @@ export type { StrikeOptions } from './Strike';
 export { Code } from './Code';
 export type { CodeOptions } from './Code';
 
-export { CodeBlock } from './CodeBlock';
-export type { CodeBlockOptions } from './CodeBlock';
-
 export { FontFamily } from './FontFamily';
 
 export { Heading } from './Heading';

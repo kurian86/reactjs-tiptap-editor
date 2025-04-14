@@ -108,7 +108,6 @@ const locale = {
   'editor.blockquote.tooltip': 'Citação',
   'editor.horizontalrule.tooltip': 'Regra horizontal',
   'editor.code.tooltip': 'Código',
-  'editor.codeblock.tooltip': 'Bloco de código',
   'editor.clear.tooltip': 'Limpar formato',
   'editor.undo.tooltip': 'Desfazer',
   'editor.redo.tooltip': 'Refazer',

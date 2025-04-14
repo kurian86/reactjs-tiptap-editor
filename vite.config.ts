@@ -88,7 +88,6 @@ export default defineConfig(({ mode }) => {
           'react',
           'react-dom',
           'react/jsx-runtime',
-          'shiki',
           'docx',
           '@radix-ui/react-dropdown-menu',
           '@radix-ui/react-icons',

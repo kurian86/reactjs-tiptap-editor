@@ -19,7 +19,6 @@ export interface ExportWordOptions extends GeneralOptions<ExportWordOptions> {}
 const nodeSerializer = {
   ...defaultNodes,
   hardBreak: defaultNodes.hard_break,
-  codeBlock: defaultNodes.code_block,
   orderedList: defaultNodes.ordered_list,
   listItem: defaultNodes.list_item,
   bulletList: defaultNodes.bullet_list,

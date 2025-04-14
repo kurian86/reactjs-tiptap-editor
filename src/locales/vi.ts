@@ -108,7 +108,6 @@ const locale = {
   'editor.blockquote.tooltip': 'Blockquote',
   'editor.horizontalrule.tooltip': 'Quy tắc ngang',
   'editor.code.tooltip': 'Mã',
-  'editor.codeblock.tooltip': 'Khối mã',
   'editor.clear.tooltip': 'Xóa định dạng',
   'editor.undo.tooltip': 'Hoàn tác',
   'editor.redo.tooltip': 'Làm lại',

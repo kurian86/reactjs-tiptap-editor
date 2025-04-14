@@ -49,13 +49,6 @@
     ]
   },
   {
-    "name": "CodeBlock.ts",
-    "package": "CodeBlock",
-    "alias": [
-      "CodeBlock"
-    ]
-  },
-  {
     "name": "Document.ts",
     "package": "Document",
     "alias": [

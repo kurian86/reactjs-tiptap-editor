@@ -2,8 +2,8 @@
 description: Code
 
 next:
-  text: CodeBlock
-  link: /extensions/CodeBlock/index.md
+  text: Color
+  link: /extensions/Color/index.md
 ---
 
 # Code
