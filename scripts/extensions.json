@@ -91,13 +91,6 @@
     ]
   },
   {
-    "name": "Excalidraw.ts",
-    "package": "Excalidraw",
-    "alias": [
-      "Excalidraw"
-    ]
-  },
-  {
     "name": "FontSize.ts",
     "package": "FontSize",
     "alias": [

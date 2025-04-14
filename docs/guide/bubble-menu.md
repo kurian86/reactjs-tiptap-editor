@@ -25,7 +25,6 @@ The system provides the following default bubble menus:
 | TableBubbleMenu | Provides table-related operations like adding/deleting rows and columns, merging cells, etc. | tableConfig         |
 | BubbleMenuKatex | The BubbleMenuKatex component provides operations related to rendering mathematical equations using the KaTeX library. It allows users to insert, edit, and format mathematical expressions within the editor. | katexConfig         |
 |   BubbleMenuIframe     | Provides iframe-related  operations like size, link , etc.  | iframeConfig          |
-|   BubbleMenuExcalidraw     | Provides excalidraw-related operations like changing size, edit etc.   | excalidrawConfig          |
 |   ColumnsMenu   | Provides multi-column layout operations like adjusting column numbers, widths, etc.          | columnConfig        |
 |   ContentMenu   | Provides general content-related operations like copy, paste, delete, etc.                   | floatingMenuConfig  |
 |   BubbleMenuImageGif   | Provides general content-related operations like copy, paste, delete, image gif etc.                   | imageGifConfig  |

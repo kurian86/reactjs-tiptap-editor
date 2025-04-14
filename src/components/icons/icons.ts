@@ -94,7 +94,6 @@ import {
 import { ColumnAddLeft } from '@/components/icons/ColumnAddLeft';
 import { ColumnAddRight } from '@/components/icons/ColumnAddRight';
 import { Direction } from '@/components/icons/Direction';
-import { Excalidraw } from '@/components/icons/Excalidraw';
 import { ExportPdf } from '@/components/icons/ExportPdf';
 import ExportWord from '@/components/icons/ExportWord';
 import { GifIcon } from '@/components/icons/GIfIcon';
@@ -191,7 +190,6 @@ export const icons = {
   ColumnAddLeft,
   ColumnAddRight,
   BookMarked,
-  Excalidraw,
   ZoomIn,
   ZoomOut,
   Settings,

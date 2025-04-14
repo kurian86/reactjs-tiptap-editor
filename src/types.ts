@@ -192,13 +192,6 @@ export interface BubbleMenuProps {
      */
     hidden?: boolean
   }
-  excalidrawConfig?: {
-    /**
-     * @description excalidraw menu hidden
-     * @default false
-     */
-    hidden?: boolean
-  }
   iframeConfig?: {
     /**
      * @description iframe menu hidden
