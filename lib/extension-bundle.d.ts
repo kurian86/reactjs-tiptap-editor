@@ -729,22 +729,6 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        indent: {
-            /**
-             * Set the indent attribute
-             */
-            indent: () => ReturnType;
-            /**
-             * Set the outdent attribute
-             */
-            outdent: () => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
         lineHeight: {
             setLineHeight: (lineHeight: string) => ReturnType;
             unsetLineHeight: () => ReturnType;
@@ -775,9 +759,15 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        tableCellBackground: {
-            setTableCellBackground: (color: string) => ReturnType;
-            unsetTableCellBackground: () => ReturnType;
+        indent: {
+            /**
+             * Set the indent attribute
+             */
+            indent: () => ReturnType;
+            /**
+             * Set the outdent attribute
+             */
+            outdent: () => ReturnType;
         };
     }
 }
@@ -785,14 +775,9 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        iframe: {
-            /**
-             * Add an iframe
-             */
-            setIframe: (options: {
-                src: string;
-                service: string;
-            }) => ReturnType;
+        tableCellBackground: {
+            setTableCellBackground: (color: string) => ReturnType;
+            unsetTableCellBackground: () => ReturnType;
         };
     }
 }
@@ -816,6 +801,21 @@ declare module '@tiptap/core' {
             addColBefore: () => ReturnType;
             addColAfter: () => ReturnType;
             deleteCol: () => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        iframe: {
+            /**
+             * Add an iframe
+             */
+            setIframe: (options: {
+                src: string;
+                service: string;
+            }) => ReturnType;
         };
     }
 }
@@ -907,16 +907,6 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        mermaid: {
-            setMermaid: (options: any, replace?: any) => ReturnType;
-            setAlignImageMermaid: (align: 'left' | 'center' | 'right') => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
         twitter: {
             /**
              * Insert a tweet
@@ -932,9 +922,9 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        drawer: {
-            setDrawer: (options: any, replace?: any) => ReturnType;
-            setAlignImageDrawer: (align: 'left' | 'center' | 'right') => ReturnType;
+        mermaid: {
+            setMermaid: (options: any, replace?: any) => ReturnType;
+            setAlignImageMermaid: (align: 'left' | 'center' | 'right') => ReturnType;
         };
     }
 }
@@ -942,8 +932,9 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        excalidraw: {
-            setExcalidraw: (attrs?: IExcalidrawAttrs) => ReturnType;
+        drawer: {
+            setDrawer: (options: any, replace?: any) => ReturnType;
+            setAlignImageDrawer: (align: 'left' | 'center' | 'right') => ReturnType;
         };
     }
 }
