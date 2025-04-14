@@ -232,11 +232,6 @@ export declare interface ClearOptions extends GeneralOptions<ClearOptions> {
 
 export declare const Code: Mark<CodeOptions, any>;
 
-export declare const CodeBlock: Node_2<any, any>;
-
-export declare interface CodeBlockOptions extends GeneralOptions<CodeBlockOptions> {
-}
-
 export declare interface CodeOptions extends CodeOptions_2, GeneralOptions<CodeOptions> {
 }
 
@@ -377,10 +372,6 @@ declare interface IImageOptions extends GeneralOptions<IImageOptions> {
     defaultInline?: boolean;
 }
 
-declare interface IKatexOptions {
-    HTMLAttributes: Record<string, any>;
-}
-
 declare const Image_2: Node_2<IImageOptions, any>;
 export { Image_2 as Image }
 
@@ -422,8 +413,6 @@ export declare const Italic: Mark<ItalicOptions, any>;
 export declare interface ItalicOptions extends ItalicOptions_2, GeneralOptions<ItalicOptions> {
 }
 
-export declare const Katex: Node_2<IKatexOptions, any>;
-
 export declare const LineHeight: Extension<LineHeightOptions, any>;
 
 export declare interface LineHeightOptions extends GeneralOptions<LineHeightOptions> {
@@ -438,13 +427,6 @@ export declare interface LinkOptions extends LinkOptions_2, GeneralOptions<LinkO
 }
 
 export declare const Mention: Node_2<MentionOptions<any, MentionNodeAttrs>, any>;
-
-export declare const Mermaid: Node_2<MermaidOptions, any>;
-
-declare interface MermaidOptions extends GeneralOptions<MermaidOptions> {
-    /** Function for uploading files */
-    upload?: (file: File) => Promise<string>;
-}
 
 export declare const MoreMark: Extension<MoreMarkOptions, any>;
 
@@ -702,15 +684,6 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        setCodeBlock: {
-            setCodeBlock: (options?: any) => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
         fontSize: {
             /**
              * Set the text font size. ex: "12px", "2em", or "small". Must be a valid
@@ -732,26 +705,6 @@ declare module '@tiptap/core' {
         lineHeight: {
             setLineHeight: (lineHeight: string) => ReturnType;
             unsetLineHeight: () => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
-        imageUpload: {
-            /**
-             * Add an image
-             */
-            setImageInline: (options: Partial<SetImageAttrsOptions>) => ReturnType;
-            /**
-             * Update an image
-             */
-            updateImage: (options: Partial<SetImageAttrsOptions>) => ReturnType;
-            /**
-             * Set image alignment
-             */
-            setAlignImage: (align: 'left' | 'center' | 'right') => ReturnType;
         };
     }
 }
@@ -785,37 +738,28 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
+        imageUpload: {
+            /**
+             * Add an image
+             */
+            setImageInline: (options: Partial<SetImageAttrsOptions>) => ReturnType;
+            /**
+             * Update an image
+             */
+            updateImage: (options: Partial<SetImageAttrsOptions>) => ReturnType;
+            /**
+             * Set image alignment
+             */
+            setAlignImage: (align: 'left' | 'center' | 'right') => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
         painter: {
             setPainter: (marks: Mark[]) => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
-        columns: {
-            insertColumns: (attrs?: {
-                cols: number;
-            }) => ReturnType;
-            addColBefore: () => ReturnType;
-            addColAfter: () => ReturnType;
-            deleteCol: () => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
-        iframe: {
-            /**
-             * Add an iframe
-             */
-            setIframe: (options: {
-                src: string;
-                service: string;
-            }) => ReturnType;
         };
     }
 }
@@ -838,10 +782,13 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        emoji: {
-            setEmoji: (emoji: {
-                name: string;
-                emoji: string;
+        iframe: {
+            /**
+             * Add an iframe
+             */
+            setIframe: (options: {
+                src: string;
+                service: string;
             }) => ReturnType;
         };
     }
@@ -850,8 +797,25 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        katex: {
-            setKatex: (arg?: IKatexAttrs) => ReturnType;
+        columns: {
+            insertColumns: (attrs?: {
+                cols: number;
+            }) => ReturnType;
+            addColBefore: () => ReturnType;
+            addColAfter: () => ReturnType;
+            deleteCol: () => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        emoji: {
+            setEmoji: (emoji: {
+                name: string;
+                emoji: string;
+            }) => ReturnType;
         };
     }
 }
@@ -915,16 +879,6 @@ declare module '@tiptap/core' {
              */
             setTweet: (options: SetTweetOptions) => ReturnType;
             updateTweet: (options: SetTweetOptions) => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
-        mermaid: {
-            setMermaid: (options: any, replace?: any) => ReturnType;
-            setAlignImageMermaid: (align: 'left' | 'center' | 'right') => ReturnType;
         };
     }
 }

@@ -108,7 +108,6 @@ export declare const en: {
     'editor.blockquote.tooltip': string;
     'editor.horizontalrule.tooltip': string;
     'editor.code.tooltip': string;
-    'editor.codeblock.tooltip': string;
     'editor.clear.tooltip': string;
     'editor.undo.tooltip': string;
     'editor.redo.tooltip': string;
@@ -147,7 +146,6 @@ export declare const en: {
     Flags: string;
     'Frequently used': string;
     'editor.formula.dialog.text': string;
-    'editor.katex.tooltip': string;
     'editor.exportPdf.tooltip': string;
     'editor.exportWord.tooltip': string;
     'editor.importWord.tooltip': string;
@@ -164,7 +162,6 @@ export declare const en: {
     'editor.attachment.please_upload': string;
     'editor.imageGif.tooltip': string;
     'editor.replace.caseSensitive': string;
-    'editor.mermaid.tooltip': string;
     'editor.twitter.tooltip': string;
     'editor.tooltip.flipX': string;
     'editor.tooltip.flipY': string;
@@ -280,7 +277,6 @@ export declare const hu_HU: {
     'editor.blockquote.tooltip': string;
     'editor.horizontalrule.tooltip': string;
     'editor.code.tooltip': string;
-    'editor.codeblock.tooltip': string;
     'editor.clear.tooltip': string;
     'editor.undo.tooltip': string;
     'editor.redo.tooltip': string;
@@ -319,7 +315,6 @@ export declare const hu_HU: {
     Flags: string;
     'Frequently used': string;
     'editor.formula.dialog.text': string;
-    'editor.katex.tooltip': string;
     'editor.exportPdf.tooltip': string;
     'editor.exportWord.tooltip': string;
     'editor.importWord.tooltip': string;
@@ -336,7 +331,6 @@ export declare const hu_HU: {
     'editor.attachment.please_upload': string;
     'editor.imageGif.tooltip': string;
     'editor.replace.caseSensitive': string;
-    'editor.mermaid.tooltip': string;
     'editor.twitter.tooltip': string;
     'editor.tooltip.flipX': string;
     'editor.tooltip.flipY': string;
@@ -475,7 +469,6 @@ export declare const pt_BR: {
     'editor.blockquote.tooltip': string;
     'editor.horizontalrule.tooltip': string;
     'editor.code.tooltip': string;
-    'editor.codeblock.tooltip': string;
     'editor.clear.tooltip': string;
     'editor.undo.tooltip': string;
     'editor.redo.tooltip': string;
@@ -514,7 +507,6 @@ export declare const pt_BR: {
     Flags: string;
     'Frequently used': string;
     'editor.formula.dialog.text': string;
-    'editor.katex.tooltip': string;
     'editor.exportPdf.tooltip': string;
     'editor.exportWord.tooltip': string;
     'editor.importWord.tooltip': string;
@@ -531,7 +523,6 @@ export declare const pt_BR: {
     'editor.attachment.please_upload': string;
     'editor.imageGif.tooltip': string;
     'editor.replace.caseSensitive': string;
-    'editor.mermaid.tooltip': string;
     'editor.twitter.tooltip': string;
     'editor.tooltip.flipX': string;
     'editor.tooltip.flipY': string;
@@ -647,7 +638,6 @@ export declare const vi: {
     'editor.blockquote.tooltip': string;
     'editor.horizontalrule.tooltip': string;
     'editor.code.tooltip': string;
-    'editor.codeblock.tooltip': string;
     'editor.clear.tooltip': string;
     'editor.undo.tooltip': string;
     'editor.redo.tooltip': string;
@@ -686,7 +676,6 @@ export declare const vi: {
     Flags: string;
     'Frequently used': string;
     'editor.formula.dialog.text': string;
-    'editor.katex.tooltip': string;
     'editor.exportPdf.tooltip': string;
     'editor.exportWord.tooltip': string;
     'editor.importWord.tooltip': string;
@@ -703,7 +692,6 @@ export declare const vi: {
     'editor.attachment.please_upload': string;
     'editor.imageGif.tooltip': string;
     'editor.replace.caseSensitive': string;
-    'editor.mermaid.tooltip': string;
     'editor.twitter.tooltip': string;
     'editor.tooltip.flipX': string;
     'editor.tooltip.flipY': string;
@@ -819,7 +807,6 @@ export declare const zh_CN: {
     'editor.blockquote.tooltip': string;
     'editor.horizontalrule.tooltip': string;
     'editor.code.tooltip': string;
-    'editor.codeblock.tooltip': string;
     'editor.clear.tooltip': string;
     'editor.undo.tooltip': string;
     'editor.redo.tooltip': string;
@@ -858,7 +845,6 @@ export declare const zh_CN: {
     Flags: string;
     'Frequently used': string;
     'editor.formula.dialog.text': string;
-    'editor.katex.tooltip': string;
     'editor.exportPdf.tooltip': string;
     'editor.exportWord.tooltip': string;
     'editor.importWord.tooltip': string;
@@ -875,7 +861,6 @@ export declare const zh_CN: {
     'editor.attachment.please_upload': string;
     'editor.imageGif.tooltip': string;
     'editor.replace.caseSensitive': string;
-    'editor.mermaid.tooltip': string;
     'editor.twitter.tooltip': string;
     'editor.tooltip.flipX': string;
     'editor.tooltip.flipY': string;
@@ -895,15 +880,6 @@ declare module '@tiptap/core' {
              * Update an video
              */
             updateVideo: (options: Partial<SetVideoOptions>) => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
-        setCodeBlock: {
-            setCodeBlock: (options?: any) => ReturnType;
         };
     }
 }
@@ -939,26 +915,6 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        imageUpload: {
-            /**
-             * Add an image
-             */
-            setImageInline: (options: Partial<SetImageAttrsOptions>) => ReturnType;
-            /**
-             * Update an image
-             */
-            updateImage: (options: Partial<SetImageAttrsOptions>) => ReturnType;
-            /**
-             * Set image alignment
-             */
-            setAlignImage: (align: 'left' | 'center' | 'right') => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
         indent: {
             /**
              * Set the indent attribute
@@ -985,37 +941,28 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
+        imageUpload: {
+            /**
+             * Add an image
+             */
+            setImageInline: (options: Partial<SetImageAttrsOptions>) => ReturnType;
+            /**
+             * Update an image
+             */
+            updateImage: (options: Partial<SetImageAttrsOptions>) => ReturnType;
+            /**
+             * Set image alignment
+             */
+            setAlignImage: (align: 'left' | 'center' | 'right') => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
         painter: {
             setPainter: (marks: Mark[]) => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
-        columns: {
-            insertColumns: (attrs?: {
-                cols: number;
-            }) => ReturnType;
-            addColBefore: () => ReturnType;
-            addColAfter: () => ReturnType;
-            deleteCol: () => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
-        iframe: {
-            /**
-             * Add an iframe
-             */
-            setIframe: (options: {
-                src: string;
-                service: string;
-            }) => ReturnType;
         };
     }
 }
@@ -1038,10 +985,13 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        emoji: {
-            setEmoji: (emoji: {
-                name: string;
-                emoji: string;
+        iframe: {
+            /**
+             * Add an iframe
+             */
+            setIframe: (options: {
+                src: string;
+                service: string;
             }) => ReturnType;
         };
     }
@@ -1050,8 +1000,25 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        katex: {
-            setKatex: (arg?: IKatexAttrs) => ReturnType;
+        columns: {
+            insertColumns: (attrs?: {
+                cols: number;
+            }) => ReturnType;
+            addColBefore: () => ReturnType;
+            addColAfter: () => ReturnType;
+            deleteCol: () => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        emoji: {
+            setEmoji: (emoji: {
+                name: string;
+                emoji: string;
+            }) => ReturnType;
         };
     }
 }
@@ -1115,16 +1082,6 @@ declare module '@tiptap/core' {
              */
             setTweet: (options: SetTweetOptions) => ReturnType;
             updateTweet: (options: SetTweetOptions) => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
-        mermaid: {
-            setMermaid: (options: any, replace?: any) => ReturnType;
-            setAlignImageMermaid: (align: 'left' | 'center' | 'right') => ReturnType;
         };
     }
 }
