@@ -111,8 +111,6 @@ export { Attachment } from './Attachment';
 
 export { ImageGif } from './ImageGif';
 
-export { Mermaid } from './Mermaid';
-
 export { Twitter } from './Twitter';
 
 export { Drawer } from './Drawer';

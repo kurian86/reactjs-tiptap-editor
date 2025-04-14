@@ -97,7 +97,6 @@ import { ExportPdf } from '@/components/icons/ExportPdf';
 import ExportWord from '@/components/icons/ExportWord';
 import { GifIcon } from '@/components/icons/GIfIcon';
 import { LeftToRight } from '@/components/icons/LeftToRight';
-import { Mermaid } from '@/components/icons/Mermaid';
 import { RightToLeft } from '@/components/icons/RightToLeft';
 import { Twitter } from '@/components/icons/Twitter';
 
@@ -201,7 +200,6 @@ export const icons = {
   GifIcon,
   ChevronUp,
   Crop: CropIcon,
-  Mermaid,
   Twitter,
   FlipX: FlipVertical,
   FlipY: FlipHorizontal,

@@ -12,7 +12,6 @@ import {
 } from '@/components';
 import { BubbleMenuDrawer } from '@/components/menus/components/BubbleMenuDrawer';
 import { BubbleMenuIframe } from '@/components/menus/components/BubbleMenuIframe';
-import { BubbleMenuMermaid } from '@/components/menus/components/BubbleMenuMermaid';
 import { BubbleMenuTwitter } from '@/components/menus/components/BubbleMenuTwitter';
 import { Image, ImageGif } from '@/extensions';
 import type { BubbleMenuProps as BubbleMenuPropsType } from '@/types';
@@ -50,9 +49,6 @@ export function BubbleMenu({ editor, disabled, bubbleMenu }: BubbleMenuComponent
     ) : null,
     extensionsNames.includes('video') && !bubbleMenu?.videoConfig?.hidden ? (
       <BubbleMenuVideo disabled={disabled} editor={editor} key="video" />
-    ) : null,
-    extensionsNames.includes('mermaid') && !bubbleMenu?.mermaidConfig?.hidden ? (
-      <BubbleMenuMermaid disabled={disabled} editor={editor} key="mermaid" />
     ) : null,
     extensionsNames.includes('iframe') && !bubbleMenu?.iframeConfig?.hidden ? (
       <BubbleMenuIframe disabled={disabled} editor={editor} key="iframe" />

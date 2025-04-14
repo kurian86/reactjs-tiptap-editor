@@ -111,7 +111,6 @@ export default defineConfig(({ mode }) => {
           're-resizable',
           '@radix-ui/react-dialog',
           'react-image-crop',
-          'mermaid',
           'easydrawer',
           'frimousse',
         ],

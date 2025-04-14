@@ -163,7 +163,6 @@ const locale = {
   'editor.attachment.please_upload': '请上传文件',
   'editor.imageGif.tooltip': 'Gif',
   'editor.replace.caseSensitive': '区分大小写',
-  'editor.mermaid.tooltip': 'Mermaid',
   'editor.twitter.tooltip': 'Twitter',
   'editor.tooltip.flipX': '水平翻转',
   'editor.tooltip.flipY': '垂直翻转',
